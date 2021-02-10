@@ -1,0 +1,30 @@
+<html>
+  <p id="weather" style="font-size:24px" class="loader"></p>
+</html>
+
+<style>
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3f3f3f;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 0.3s linear infinite; /* Safari */
+  animation: spin 0.3s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
+</html>
+
+<script src="weather_api.js"></script>
